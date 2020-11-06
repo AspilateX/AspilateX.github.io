@@ -9,7 +9,9 @@
 		<header>
 			<div class="header_body">
 				<div class="header_column">
-					<img src="img/logo-low-res.png" alt="Logo" class="header_logo">
+					<a href="#">
+						<img src="img/logo-low-res.png" alt="Logo" class="header_logo">
+					</a>
 				</div>
 				<div class="header_column">
 					<nav class="header_menu">
@@ -31,7 +33,62 @@
 		</header>
 		<main>
 			<section class="slider_block_container">
-				<div class="slider_block"></div>
+				<div id="slider_block">
+					<input type="radio" name="slider" id="slide1" checked>
+					<input type="radio" name="slider" id="slide2">
+					<input type="radio" name="slider" id="slide3">
+					<input type="radio" name="slider" id="slide4">
+					<div id="slides">
+						<div id="overflow">
+							<div class="inner">
+								<div class="slide">
+									<div class="slide_content">
+										<img src="https://cs11.pikabu.ru/post_img/big/2018/06/09/2/1528507136128999848.jpg">
+									<div class="slide_title">
+										<a href="#" class="slide_content_link">Slide 1 Link</a>
+									</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="slide_content">
+										<img src="https://cs11.pikabu.ru/post_img/big/2018/06/09/2/1528507136128999848.jpg">
+									<div class="slide_title">
+										<a href="#" class="slide_content_link">Slide 2 Link</a>
+									</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="slide_content">
+										<img src="https://cs11.pikabu.ru/post_img/big/2018/06/09/2/1528507136128999848.jpg">
+									<div class="slide_title">
+										<a href="#" class="slide_content_link">Slide 3 Link</a>
+									</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="slide_content">
+										<img src="https://cs11.pikabu.ru/post_img/big/2018/06/09/2/1528507136128999848.jpg">
+									<div class="slide_title">
+										<a href="#" class="slide_content_link">Slide 4 Link</a>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="controls">
+						<label for="slide1"></label>
+						<label for="slide2"></label>
+						<label for="slide3"></label>
+						<label for="slide4"></label>
+					</div>
+					<div id="bullets">
+						<label for="slide1"></label>
+						<label for="slide2"></label>
+						<label for="slide3"></label>
+						<label for="slide4"></label>
+					</div>
+				</div>
 			</section>
 			<section class="last_news_block_container">
 				<div class="last_news_block"></div>
