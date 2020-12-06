@@ -1,0 +1,106 @@
+@import "nullstyle.scss";
+
+//Шрифты
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+//Переменные
+$fontfamily: "Roboto";
+$mainColorBlue: #01012b;
+$mainColorPink: #ff2a6d;
+$contentWidth: 1440px;
+body {
+	background-color: white;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+}
+
+.container {
+	//max-width: $contentWidth + 30px;
+	//padding: 0px 15px;
+}
+
+.header {
+	position: absolute;
+	display: flex;
+	align-items: center;
+
+	width: 100%;
+	margin: 0px auto;
+	z-index: 50;
+
+	color: white;
+	height: 72px;
+	background-color: $mainColorBlue;
+	box-shadow: 0px 10px 0px 0px rgba(0,0,0,0.75);
+
+	.header_menu {
+		width: $contentWidth;
+		height: 100%;
+		margin: 0px auto;
+		display: flex;
+		justify-content: space-between;
+		vertical-align: middle;
+		position: relative;
+		.header_logo {
+			padding: 30px 30px;
+		}
+		ul {
+			list-style: none;
+			li {
+				color: white;
+				font-size: 14pt;
+				display: inline-block;
+				padding: 30px 100px;
+
+				a {
+					&:visited {
+					color: white;
+					}
+					&:hover {
+					color: red;
+					}
+				}
+
+			}
+		}
+	}
+}
+
+.slider-container {
+	background-color: $mainColorPink;
+
+	.slider-background {
+		background-color: black;
+		opacity: 20%;
+		height: 100%;
+		//background-attachment: fixed;
+		background-position: center;
+		background-image: url("../img/slider-background.jpg");
+		z-index: -1;
+	}
+	height: 600px;
+}
+
+.slick-track {
+	display: flex;
+}
+
+.info-bar-container {
+	height: 720px;
+	background-color: $mainColorBlue;
+}
+
+.artworks-panel-container {
+	height: 1830px;
+	background-color: $mainColorPink;
+}
+
+.footer	{
+	.container {
+		height: 144px;
+		background-color: $mainColorBlue;
+	}
+}
